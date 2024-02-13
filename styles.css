@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+ body {
+    font-family: 'General Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding-top: 0px;
+    background-color: darkorchid;
+}
+
+.about-founder {
+    background-color: #fff; 
+    color: #333; 
+}
+
+#timer {
+    color: #fff; 
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .countdown {
+        padding: 60px 0;
+    }
+}
+
+.countdown {
+    background-color: #333; 
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    font-size: 18px;
+} 
+
+ .register-box {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:Yellow; 
+   border-radius: 5px;
+    color: Grey;
+    width: 500px;
+} 
+
+
+ @media only screen and (max-width: 600px) {
+    .countdown {
+        padding: 60px 0;
+    } 
+} 
+
+.title-container {
+    text-align: center;
+}
+.description {
+    font-size: 20px;
+    color: #333; 
+}
+.timer-label {
+    color: white;
+    font-size: 15px;
+ justify-content: space-between;
+}
+
+
+#slide-in-form {
+    position: fixed;
+    bottom: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+    transition: bottom 0.5s ease;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+   
+}
+.centered-text {
+    text-align: center;
+}
+
+.orange-text, .black-text {
+    font-size: 35px;
+}
+
+.orange-text {
+    color: orange;
+}
+
+.black-text {
+    color: black;
+}
+
+.image-container {
+    margin-right: 20px; 
+    border-radius: 8px;
+}
+
+.para-container {
+   height: 385px;
+    background-color: #ccc; 
+    border-radius: 8px; 
+    padding: 20px; 
+}
+
+.para-container p {
+    font-size: 18px; 
+    margin-top: 20px;
+    line-height: 3; 
+  }
+.hidden {
+    display: none;
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.icon {
+    text-align: center;
+    width: 30%; 
+    margin: 10px; 
+}
+
+.icon img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-content {
+        padding: 50px 20px;
+    }
+
+    .founder-content {
+        padding: 40px 20px;
+    }
+
+    .why-choose-us {
+        padding: 60px 20px;
+    }
+
+    .countdown {
+        padding: 60px 20px;
+    }
+
+    .cta {
+        padding: 60px 20px;
+    }
+}
+.offer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkorchid;
+    padding: 20px;
+    color: white;
+  }
+  
+  .offer-title {
+    font-size: 30px;
+    margin-left: 30px;
+    font-weight: 400;
+
+  }
+  
+  .offer-title span {
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .offer-description {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  
+  }
+  
+  .offer-price p {
+    margin: 0;
+margin-right: 50px;
+font-size: 20px;
+  }
+  .offer-price .price{
+    font-size: 50px;
+    margin-right: 60px;
+  }
+  
+  .register-button button {
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: darkviolet;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 40px;
+  }
+  
+  .register-button button:hover {
+    background-color: gold;
+
+  }
+  .price {
+    font-size: 30px; 
+  }
+  .offer-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .offer-price {
+    text-align: center;
+  }
+  
+  .price {
+    font-size: 50px; 
+    color: yellow;
+  }
+  
+  .register-button {
+    margin-top: 10px; 
+  }
+  .register-button button {
+    width: 200px; 
+    height: 80px; 
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: darkviolet;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px; 
+    color: grey;
+  }
+  
+  .register-button button:hover {
+    background-color: gold;
+  }
+  #slide-in-form {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  #slide-in-form.visible {
+    transform: translateX(0);
+  }
+  
+  #slide-in-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #slide-in-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  #slide-in-form input[type="email"],
+  #slide-in-form input[type="tel"],
+  #slide-in-form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #slide-in-form input[type="email"],
+  #slide-in-form input[type="tel"] {
+    font-size: 16px;
+  }
+  
+  #slide-in-form button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #slide-in-form button:hover {
+    background-color: #0056b3;
+  }
+  .discover-text {
+    font-size: 50px;
+    color: white;
+    text-align: left;
+    font-weight:bolder;
+   
+    margin-left: 100px;
+  }
+ 
+  .hero-section{
+    background-color:darkorchid;
+
+   padding-top: 30px;
+  }
+  .description {
+    margin-left: 100px;
+    color:white;
+    margin-bottom: 30px;
+  }
+  .hero-section .register-here{
+height: 70px;
+background-color: yellow;
+width: 500px;
+margin-left: 100px;
+border-radius: 8px;
+padding-left: 150px;
+color: Grey;
+font-size: 30px;
+padding-top: 25px;
+
+  }
+  .hero-section .price{
+   
+    color: grey;
+    font-size: 35px;
+  }
+  .discount-link{
+    margin-top: 8px;
+    text-decoration: underline;
+    margin-left: 300px;
+    color: white;
+  }
+  .icons {
+    position: relative; 
+   
+  }
+  
+  .image-right {
+    position: absolute; 
+    top: 0; 
+    right: 70px; 
+    margin-top: 100px;
+    width: 600px;
+    height: auto; 
+    border-radius: 8px;
+  }
+  .containers {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 100px; 
+    margin-right: auto;
+  }
+  
+  .box {
+    width: 100px; 
+    height: 100px; 
+    border: 3px solid white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; 
+    margin-bottom: 30px;
+  }
+  
+  .box:last-child {
+    margin-right: 130px; 
+  }
+  
+  .box p {
+    margin: 0;
+  }
+  
+  .fa-icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .text{
+    color: white;
+padding-top:  12px;
+font-weight: 500;
+
+  }
+  .fa-calendar-plus{
+    font-size: 24px;
+  margin-bottom: 5px;
+  color: white; 
+  }
+  .fa-clock{
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: white; 
+  }
+  .fa-hourglass-half{
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: white; 
+  } 
+
+/* Responsive Styling */
+@media only screen and (max-width: 1200px) {
+    .containers {
+        flex-wrap: wrap;
+    }
+    .box {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section .register-here {
+        width: 90%;
+        padding-left: 50px;
+        padding-top: 15px;
+    }
+    .hero-section .price {
+        font-size: 30px;
+    }
+    .discount-link {
+        margin-left: 0;
+        text-align: center;
+    }
+    .containers {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-right {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .countdown {
+        padding: 60px 0;
+        font-size: 16px;
+    }
+    .hero-section .register-here {
+        width: 90%;
+        padding-left: 20px;
+        padding-top: 15px;
+        font-size: 20px;
+    }
+    .hero-section .price {
+        font-size: 25px;
+    }
+    .discount-link {
+        font-size: 16px;
+    }
+    .discover-text {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .description {
+        margin-left: 20px;
+    }
+    .containers {
+        width: 95%;
+    }
+    .box {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
+    .box:last-child {
+        margin-right: 0;
+    }
+    .fa-icon {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .image-container {
+        margin-right: 0;
+    }
+}
